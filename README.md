@@ -20,13 +20,13 @@ The script is aiming to collect dataset for further Neural Network learning. The
 
 ## Settings
 
-You can adjust the number of pages to scrape and choose the output format for annotation files, either json or xml..
+You can adjust the number of pages to scrape and choose the output format for annotation files, either json or xml.
 
 settings.py
 
     BASE_URL = "https://auto.ria.com"
     START_URL = "/search/?indexName=auto,order_auto,newauto_search&plateNumber.length.gte=1&categories.main.id=1&country.import.usa.not=-1&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10"
-    SCRAP_PAGES = 2  # will stop after scrapping n pages
+    SCRAPE_PAGES = 2  # will stop after scrapping n pages
     DIR_PATH = Path("raw_dataset")
     PHOTO_PATH = DIR_PATH.joinpath("photos")
     PLATE_PATH = DIR_PATH.joinpath("plates")
