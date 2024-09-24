@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from PIL import Image
 
-from settings import BASE_URL, START_URL, SCRAP_PAGES, PHOTO_PATH, \
+from settings import BASE_URL, START_URL, SCRAPE_PAGES, PHOTO_PATH, \
     PLATE_PATH, ANNOTATION_PATH, ANNOTATION_FORMAT
 from recognize_module import recognizer
 
@@ -99,7 +99,7 @@ def get_imgs(url: str, plate_no: str) -> None:
 def main():
     url = START_URL
     # Javascript rendering needed for pagination, so using Selenium
-    for _ in range(SCRAP_PAGES):
+    for _ in range(SCRAPE_PAGES):
         driver = webdriver.Firefox()
         driver.get(BASE_URL + url)
         time.sleep(5)

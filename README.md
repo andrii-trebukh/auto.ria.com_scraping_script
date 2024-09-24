@@ -20,7 +20,7 @@ The script is aiming to collect dataset for further Neural Network learning. The
 
 ## Settings
 
-You may adjust numbers of pages to scrap and annotations files output format (json or xml).
+You can adjust the number of pages to scrape and choose the output format for annotation files, either json or xml..
 
 settings.py
 
